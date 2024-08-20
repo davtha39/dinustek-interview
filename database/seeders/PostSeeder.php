@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Category;
-use App\Models\Postt;
+use App\Models\Post;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -14,8 +14,8 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-        $category = Category::create(['nme' => 'Laravel']);
-        $post = Postt::create([
+        $category = Category::create(['name' => 'Laravel']);
+        $post = Post::create([
             'title' => 'Belajar Laravel',
             'content' => 'Laravel adalah framework PHP.'
         ]);

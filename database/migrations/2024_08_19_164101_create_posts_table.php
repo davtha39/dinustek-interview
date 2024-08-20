@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('poosts', function (Blueprint $table) { // Wrong table name
+        Schema::create('posts', function (Blueprint $table) { // Wrong table name
             $table->id();
             $table->string('title');
             $table->text('content');

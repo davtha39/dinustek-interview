@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('nme'); // Wrong column name
+            $table->string('name'); // Wrong column name
             $table->timestamps();
         });
     }
